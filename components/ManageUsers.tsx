@@ -1,27 +1,23 @@
 "use client";
-import React, { FormEvent, useState, useTransition } from "react";
+import React, {  useState, useTransition } from "react";
 import {
   Dialog,
-  DialogClose,
   DialogContent,
   DialogDescription,
-  DialogFooter,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { Button } from "./ui/button";
-import { usePathname } from "next/navigation";
-import { useRouter } from "next/navigation";
-import { deleteDocument, inviteUserToDocument, removeUserFromDocument } from "@/actions/actions";
+
+import { removeUserFromDocument } from "@/actions/actions";
 import { toast } from "sonner";
-import { Input } from "./ui/input";
 import { useUser } from "@clerk/nextjs";
 import { useRoom } from "@liveblocks/react/suspense";
 import useOwner from "@/lib/useOwner";
 import { useCollection } from "react-firebase-hooks/firestore";
 import { collectionGroup, query, where } from "firebase/firestore";
-import { collectMeta } from "next/dist/build/utils";
+
 import { db } from "@/firebase";
 
 function ManageUsers() {

@@ -2,10 +2,8 @@
 import React, { FormEvent, useState, useTransition } from "react";
 import {
   Dialog,
-  DialogClose,
   DialogContent,
   DialogDescription,
-  DialogFooter,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
@@ -13,7 +11,7 @@ import {
 import { Button } from "./ui/button";
 import { usePathname } from "next/navigation";
 import { useRouter } from "next/navigation";
-import { deleteDocument, inviteUserToDocument, } from "@/actions/actions";
+import {  inviteUserToDocument, } from "@/actions/actions";
 import { toast } from "sonner";
 import { Input } from "./ui/input";
 

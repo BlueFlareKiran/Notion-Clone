@@ -3,16 +3,13 @@ import * as Y from "yjs";
 import React, { useState, useTransition } from "react";
 import {
   Dialog,
-  DialogClose,
   DialogContent,
   DialogDescription,
-  DialogFooter,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { Button } from "./ui/button";
-import { Input } from "./ui/input";
 import { toast } from "sonner";
 
 type Language =
@@ -47,8 +44,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Value } from "@radix-ui/react-select";
-import { Serializer } from "node:v8";
 import { BotIcon, LanguagesIcon } from "lucide-react";
 import Markdown from "react-markdown";
 
