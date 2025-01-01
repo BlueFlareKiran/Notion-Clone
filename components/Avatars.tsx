@@ -8,7 +8,6 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { info } from "console";
 
 export default function Avatars() {
   const others = useOthers();
